@@ -1,0 +1,99 @@
+# ------------------------------------------------------------
+# Node / NestJS .gitignore for bp-backend
+# ------------------------------------------------------------
+
+# Dependencies
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+/dist
+/out
+/.next
+/build
+
+# Environment files
+.env
+.env.development
+.env.production
+.env.local
+.env.test
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+/coverage
+
+# IDE settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+/jest-stare
+/test-results.xml
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# Temporary files
+.tmp
+temp/
+.cache
+.nyc_output
+
+# Environment variable overrides
+.envrc
+.env.*
+
+# Ignore Prisma generated files (if using Prisma)
+prisma/dev.db
+prisma/migrations/
+prisma/generated/
+
+# Ignore upload or storage folders (if any)
+uploads/
+storage/
+
+# Ignore build artifacts from scripts
+/scripts/*.log
+/scripts/tmp/
+
+# Local backups or experimental folders
+backup/
+temp_data/
+sandbox/
+
+# ------------------------------------------------------------
+# End of .gitignore
+# ------------------------------------------------------------
