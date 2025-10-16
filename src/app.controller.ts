@@ -5,8 +5,13 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  //Backend Application Running 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
+  getHello(): string {return this.appService.getHello(); }
+
+  // Database Testing
+@Get('dbtest')
+async testDB() {return this.appService.testDB();}
+
+
 }
