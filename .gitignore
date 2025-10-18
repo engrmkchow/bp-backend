@@ -74,7 +74,7 @@ temp/
 
 # Environment variable overrides
 .envrc
-.env.*
+#.env.*
 
 # Ignore Prisma generated files (if using Prisma)
 prisma/dev.db
